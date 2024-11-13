@@ -1,0 +1,44 @@
+<div>
+  <img src="https://media.istockphoto.com/id/1086352374/photo/minimal-work-space-creative-flat-lay-photo-of-workspace-desk-top-view-office-desk-with-laptop.jpg?s=612x612&w=0&k=20&c=JYBNQsgeO13lU1rq3kUWfD-W0Xii3sFyYzijvsntplY=" alt="map" class="w-100">
+</div>
+<div class="d-flex flex-row justify-content-evenly p-3">
+  <div>
+    <div class="container border rounded p-3">
+      <h1><%= @flat.name %></h1>
+      <p><%= @flat.address %></p>
+    </div>
+    <div class="container border rounded p-3">
+      <h3>A bit more about this flat...</h3>
+      <p><%= @flat.description %></p>
+    </div>
+    <div class="container border rounded p-3">
+      <h4>Details</h4>
+      <p><i class="fa-solid fa-user me-2"></i><%= @flat.number_of_guests%></p>
+      <p><i class="fa-solid fa-euro-sign me-2"></i><%= @flat.price_per_night %></p>
+    </div>
+  </div>
+  <div>
+    <div class="container border rounded p-3">
+      <h5>Book this place!</h5>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">From:</span>
+        <input type="text" class="form-control" placeholder="12/10/2017">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">To:</span>
+        <input type="text" class="form-control" placeholder="18/10/2017">
+      </div>
+      <button class="btn btn-success">Book</button>
+    </div>
+    <div class="container border rounded p-2">
+      <div class="d-flex flex-row justify-content-between">
+        <p class="m-2">Share</p>
+        <div class="d-flex">
+          <p class="m-2"><i class="fa-brands fa-facebook"></i></p>
+          <p class="m-2"><i class="fa-brands fa-twitter"></i></p>
+          <p class="m-2"><i class="fa-brands fa-pinterest"></i></p>
+          <p class="m-2"><i class="fa-solid fa-envelope"></i></p>
+        </div>
+      </div>
+    </div>
+</div>

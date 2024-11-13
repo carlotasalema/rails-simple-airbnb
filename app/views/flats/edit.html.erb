@@ -1,0 +1,12 @@
+<div class="w-50 m-auto">
+<h1>Edit Flat</h1>
+  <%= simple_form_for [@flat] do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.input :price_per_night %>
+    <%= f.input :number_of_guests %>
+    <%= f.submit "Update flat", class: "btn btn-primary" %>
+    <button type="submit" class="btn btn-danger"><%= link_to "Cancel", flats_path, class:"text-white text-decoration-none" %></button>
+  <% end %>
+</div>
